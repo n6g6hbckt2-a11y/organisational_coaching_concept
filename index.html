@@ -1,0 +1,115 @@
+---
+layout: default
+title: Boardroom advisory, NED practice & systemic coaching
+body_class: page-home
+---
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Principal-led · United Kingdom &amp; Switzerland</p>
+    <h1>Where Balance-Sheet Rigour Meets Systemic Human Performance.</h1>
+    <p class="lede">Led by former HSBC Managing Director James Woodeson and former KPMG ACA Chartered Accountant Kathryn Woodeson. We partner with Boards, Private Equity Operating Partners and Chief Executives across the UK and Europe to unlock executive cohesion, govern enterprise risk and accelerate commercial scale.</p>
+    <div class="btn-row">
+      <a class="btn" href="{{ '/principals/' | relative_url }}">Meet the Principals</a>
+      <a class="btn btn-ghost" href="{{ '/contact/' | relative_url }}">Start a conversation</a>
+    </div>
+  </div>
+</section>
+
+<section class="proof" aria-label="Track record">
+  <div class="wrap proof-grid">
+    <div class="proof-item"><p class="proof-figure">£10bn+</p><p class="proof-label">Multi-currency balance sheets directed (HSBC)</p></div>
+    <div class="proof-item"><p class="proof-figure">$80bn</p><p class="proof-label">Institutional debt &amp; MTN issuance scaled</p></div>
+    <div class="proof-item"><p class="proof-figure">5,000+</p><p class="proof-label">Combined partner-side C-suite &amp; board coaching hours</p></div>
+    <div class="proof-item"><p class="proof-figure">ACA / FCA</p><p class="proof-label">Big 4 financial stewardship &amp; regulatory oversight (FINMA, MFSA, JFSC)</p></div>
+    <div class="proof-item"><p class="proof-figure">Trusted by</p><p class="proof-label">Leaders inside DeepMind, Roche, Novartis, HSBC, Uber, William Grant and PE-backed boards</p></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow">We are the firm</p>
+      <h2>You work with the Principals. Not a roster.</h2>
+    </div>
+    <div>
+      <p class="lede">When a Private Equity Operating Partner, a FTSE or Swiss AG Chair, or a high-growth Founder engages Organisational Coaching, they are not passed down to a junior associate. They work with two former global financial, commercial and regulatory leaders who have sat in their seats.</p>
+      <p>We operate at the rare intersection of balance-sheet rigour, board-level governance and systemic human performance. Most financial advisors read the P&amp;L but miss the executive-team dysfunction that destroys enterprise value. Most coaches understand people but cannot read a debt covenant or an audit risk register. We do both.</p>
+      <p class="muted">For global, multi-time-zone enterprise mandates, James and Kathryn selectively curate and direct bespoke syndicates of trusted senior practitioners, chosen for each brief.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="wrap">
+    <p class="eyebrow">Three practice pillars</p>
+    <h2>How we work with boards and leaders</h2>
+    <div class="grid-3" style="margin-top: var(--s4);">
+      <div class="card">
+        <span class="card-num">I</span>
+        <h3>Systemic Team &amp; Executive Committee Coaching</h3>
+        <p>For leadership teams and ExCos where the strategy is sound but the system is stuck. We surface the unspoken dynamics and bottlenecks that actually govern performance.</p>
+        <a class="card-link" href="{{ '/our-expertise/coaching/' | relative_url }}">Team &amp; organisational coaching →</a>
+      </div>
+      <div class="card">
+        <span class="card-num">II</span>
+        <h3>Independent NED &amp; Board Committee Leadership</h3>
+        <p>Audit &amp; Risk, Nomination, Remuneration and Strategy committee experience for Chairs, investors and search firms appointing an independent voice.</p>
+        <a class="card-link" href="{{ '/board/' | relative_url }}">Board &amp; NED practice →</a>
+      </div>
+      <div class="card">
+        <span class="card-num">III</span>
+        <h3>1:1 C-Suite &amp; Founder Partnership</h3>
+        <p>AI-augmented advisory for CEOs, CFOs and founders. The sessions stay entirely human and confidential, and the preparation and pattern-finding behind them is faster.</p>
+        <a class="card-link" href="{{ '/philosophy/' | relative_url }}">Our AI-augmented method →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow">The intellectual spine</p>
+      <h2>Both hemispheres of the boardroom.</h2>
+    </div>
+    <div>
+      <p>Our work draws on three thinkers: <strong>Iain McGilchrist</strong> on integrating precise financial control with living relational context; <strong>John Vervaeke</strong> on relevance realisation, the ability to cut through noise to what matters now; and <strong>Thomas Sowell</strong> on trade-offs, incentives and the question "Compared to what?"</p>
+      <p>The result is grounded, candid, commercially realistic work, with no "coach-slop" and no "AI-slop".</p>
+      <a class="card-link" href="{{ '/philosophy/' | relative_url }}">Philosophy &amp; AI architecture →</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="wrap">
+    <div class="split" style="align-items:end;">
+      <div><p class="eyebrow">Evidence</p><h2>Case studies</h2></div>
+      <p class="muted">Selected engagements across pharma, consumer goods, technology and growth businesses. Client names are changed to honour confidentiality.</p>
+    </div>
+    <ul class="insight-list" style="margin-top: var(--s4);">
+      {% assign cs = site.case_studies | sort: 'date' | reverse %}
+      {% for c in cs limit: 4 %}
+      <li><span class="date">{{ c.themes | join: ', ' | default: 'Case study' }}</span><div><h3><a href="{{ c.url | relative_url }}">{{ c.title }}</a></h3><p class="muted">{{ c.description }}</p></div></li>
+      {% endfor %}
+    </ul>
+    <p style="margin-top: var(--s3);"><a class="card-link" href="{{ '/case-studies/' | relative_url }}">All {{ site.case_studies | size }} case studies →</a></p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="split" style="align-items:end;">
+      <div><p class="eyebrow">Insights</p><h2>Sharp observations</h2></div>
+      <p class="muted">Short, contrarian notes on board governance, balance-sheet leadership and systemic performance, alongside our longer articles.</p>
+    </div>
+    <ul class="insight-list" style="margin-top: var(--s4);">
+      {% assign ins = site.insights | sort: 'date' | reverse %}
+      {% for i in ins limit: 3 %}
+      <li><span class="date">{{ i.date | date: "%-d %b %Y" }}</span><div><h3><a href="{{ i.url | relative_url }}">{{ i.title }}</a></h3><p class="muted">{{ i.description }}</p></div></li>
+      {% endfor %}
+    </ul>
+    <p style="margin-top: var(--s3);"><a class="card-link" href="{{ '/insights/' | relative_url }}">All insights →</a></p>
+  </div>
+</section>
+
+{% include cta.html %}

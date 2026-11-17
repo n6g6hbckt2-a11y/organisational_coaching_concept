@@ -1,0 +1,44 @@
+---
+layout: default
+title: Contact
+description: Speak directly with James or Kathryn Woodeson.
+---
+<section class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">Direct contact</p>
+    <h1 class="h2">Speak with the Principals.</h1>
+    <p class="lede">Every enquiry is read and answered by James or Kathryn personally.</p>
+  </div>
+</section>
+<section class="section-tight">
+  <div class="wrap split">
+    <div>
+      <h4>Email</h4>
+      <p><a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a></p>
+      <h4>Where we work</h4>
+      <p>United Kingdom (London, East Anglia, Channel Islands) and Switzerland.</p>
+      <hr class="rule">
+      <p class="eyebrow">Boutique partnerships</p>
+      <h3>For Tier-1 executive boutiques</h3>
+      <p>We work with a small number of executive-development boutiques that need partner-level associate delivery: board-ready, commercially literate and accredited. Tell us about the mandate and the client.</p>
+    </div>
+    <form class="form card" data-formsubmit action="https://formsubmit.co/{{ site.contact_email }}" method="post">
+      <input type="hidden" name="_subject" value="Website enquiry (concept site)">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+      <div><label for="f-name">Name</label><input id="f-name" name="name" required autocomplete="name"></div>
+      <div><label for="f-email">Email</label><input id="f-email" name="email" type="email" required autocomplete="email"></div>
+      <div><label for="f-org">Organisation &amp; role</label><input id="f-org" name="organisation" autocomplete="organization"></div>
+      <div><label for="f-type">Enquiry</label>
+        <select id="f-type" name="enquiry">
+          <option>Board / NED appointment</option>
+          <option>Team or ExCo coaching</option>
+          <option>1:1 C-suite or founder partnership</option>
+          <option>Boutique partnership</option>
+          <option>Other</option>
+        </select></div>
+      <div><label for="f-msg">Message</label><textarea id="f-msg" name="message" required></textarea></div>
+      <label class="check"><input type="checkbox" name="privacy" value="agreed" required> <span>I agree to the <a href="{{ '/privacy-policy/' | relative_url }}">privacy policy</a>.</span></label>
+      <button class="btn" type="submit">Send</button>
+    </form>
+  </div>
+</section>

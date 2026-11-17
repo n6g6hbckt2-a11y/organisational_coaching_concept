@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+<meta name="description" content="{{ page.description | default: site.description }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+</head>
+<body class="{{ page.body_class }}">
+<div class="concept-banner">Concept draft for review, not the live site</div>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="wordmark" href="{{ '/' | relative_url }}">Organisational&nbsp;Coaching<span>James &amp; Kathryn Woodeson</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      {% assign p = page.url %}
+      <a href="{{ '/principals/' | relative_url }}" {% if p contains '/principals/' %}aria-current="page"{% endif %}>The Principals</a>
+      <a href="{{ '/board/' | relative_url }}" {% if p contains '/board/' %}aria-current="page"{% endif %}>Board &amp; NED</a>
+      <a href="{{ '/our-expertise/' | relative_url }}" {% if p contains '/our-expertise/' %}aria-current="page"{% endif %}>Expertise</a>
+      <a href="{{ '/philosophy/' | relative_url }}" {% if p contains '/philosophy/' %}aria-current="page"{% endif %}>Philosophy &amp; AI</a>
+      <a href="{{ '/insights/' | relative_url }}" {% if p contains '/insights/' or p contains '/case-studies/' %}aria-current="page"{% endif %}>Insights</a>
+      <a class="nav-cta" href="{{ '/contact/' | relative_url }}" {% if p contains '/contact/' %}aria-current="page"{% endif %}>Contact</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+{{ content }}
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <p class="footer-mark">Organisational Coaching</p>
+      <p class="footer-line">Balance-sheet rigour. Board-level governance. Systemic human performance.</p>
+    </div>
+    <div>
+      <p class="eyebrow">The firm</p>
+      <p><a href="{{ '/principals/' | relative_url }}">The Principals</a><br><a href="{{ '/our-philosophy/' | relative_url }}">Our Philosophy</a><br><a href="{{ '/our-clients/' | relative_url }}">Our Clients</a><br><a href="{{ '/case-studies/' | relative_url }}">Case Studies</a></p>
+    </div>
+    <div>
+      <p class="eyebrow">Contact</p>
+      <p><a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a></p>
+      <p>United Kingdom · Switzerland</p>
+    </div>
+  </div>
+  <div class="wrap footer-legal">
+    <p>Woodeson Executive Coaching Ltd · Woodeson Executive Coaching AG · <a href="{{ '/privacy-policy/' | relative_url }}">Privacy policy</a> · <a href="{{ '/legal/' | relative_url }}">Legal</a> · <a href="{{ '/diversity-policy/' | relative_url }}">Diversity policy</a></p>
+  </div>
+</footer>
+<script src="{{ '/assets/js/site.js' | relative_url }}" defer></script>
+</body>
+</html>

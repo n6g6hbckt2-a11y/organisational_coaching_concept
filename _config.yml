@@ -1,0 +1,32 @@
+title: Organisational Coaching
+description: Principal-led boardroom advisory, NED practice and systemic coaching. James & Kathryn Woodeson.
+# Preview lives at https://<user>.github.io/organisational_coaching_concept/
+baseurl: "/organisational_coaching_concept"
+url: ""
+
+contact_email: connect@organisational-coaching.com
+
+collections:
+  insights:
+    output: true
+    permalink: /insights/:title/
+  case_studies:
+    output: true
+    permalink: /case-studies/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: insights
+    values:
+      layout: insight
+  - scope:
+      path: ""
+      type: case_studies
+    values:
+      layout: case_study
+
+markdown: kramdown
+exclude:
+  - README.md
+  - HOW-TO-PUBLISH-AN-INSIGHT.md

@@ -1,0 +1,38 @@
+---
+layout: default
+title: Insights
+description: Sharp Observations and longer articles on board governance, balance-sheet leadership and systemic performance.
+---
+<section class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">Insights</p>
+    <h1 class="h2">Sharp observations</h1>
+    <p class="lede">Short, contrarian notes on board governance, balance-sheet leadership and systemic performance, alongside our longer articles and mini-series.</p>
+  </div>
+</section>
+<section class="section-tight">
+  <div class="wrap">
+    {% assign obs = site.insights | where: 'kind', 'observation' | sort: 'date' | reverse %}
+    {% if obs.size > 0 %}
+    <p class="eyebrow">Sharp Observations</p>
+    <ul class="insight-list" style="margin-bottom: var(--s6);">
+      {% for i in obs %}
+      <li><span class="date">{{ i.date | date: "%-d %b %Y" }}</span><div><h3><a href="{{ i.url | relative_url }}">{{ i.title }}</a></h3><p class="muted">{{ i.description }}</p></div></li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    <p class="eyebrow">Articles</p>
+    {% assign arts = site.insights | where_exp: 'i', 'i.kind != "observation"' | sort: 'date' | reverse %}
+    <ul class="insight-list">
+      {% for i in arts %}
+      <li><span class="date">{{ i.date | date: "%-d %b %Y" }}</span><div><h3><a href="{{ i.url | relative_url }}">{{ i.title }}</a></h3><p class="muted">{{ i.description }}</p></div></li>
+      {% endfor %}
+    </ul>
+    <div class="grid-2" style="margin-top: var(--s5);">
+      <a class="card link-card-plain" href="{{ '/insights/what-is-organisational-coaching/' | relative_url }}"><p class="eyebrow">Mini series</p><h3>What is Organisational Coaching?</h3></a>
+      <a class="card link-card-plain" href="{{ '/insights/together-we-make-the-difference/' | relative_url }}"><p class="eyebrow">Mini series</p><h3>Together we make the difference</h3></a>
+    </div>
+    <p style="margin-top: var(--s4);"><a class="card-link" href="{{ '/case-studies/' | relative_url }}">Case studies →</a></p>
+  </div>
+</section>
+{% include cta.html %}

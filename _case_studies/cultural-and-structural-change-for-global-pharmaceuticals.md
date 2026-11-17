@@ -1,0 +1,15 @@
+---
+title: "Cultural and Structural Change for Global Pharmaceuticals"
+date: 2024-01-18
+description: "We collaborated with the leadership to create cultural and mindset change in inter-connected and cross-functional teams."
+image: "{{ site.baseurl }}/wp-content/uploads/2024/01/Case-study-illustrations_Global-pharmaceuticals.png"
+themes: ["Change", "Development", "Leadership"]
+---
+
+<h2>Client&#x27;s challenge</h2>
+<p>The client contacted us knowing that change was needed but unsure of the direction to take given the complexity and the number of people involved in an organisation which had experienced multiple transformations in the past decade.</p><p>An internal business area comprising inter-connected teams, multi-layered leadership and a community of 70+ specialist scientists and medical experts faced structural, leadership and operational challenges impacting their ability to perform effectively. We were engaged to work at all levels within the business area using a variety of interventions over a twelve-month period.</p>
+<h2>Our collaboration</h2>
+<p>During a data-led research phase we interviewed the entire community of 70+ scientists and medical experts to better understand their situation, challenges and culture. We also interviewed c. 20 key internal stakeholders of the community (including Therapeutic Area Heads) to gain a crucial outside-in perspective.</p><p>We then launched a multi-team and one-to-one coaching programme for the LT, the functional LT (reporting to the LT) and for a specialist cross-functional team of catalysts sitting within the community.</p><p>Based on a deep understanding of the community’s characteristics, strengths and challenges gained in the research phase and in collaboration with the business area and functional leadership teams, we began to explore and implement practical and creative ways to build trust and credibility, change mindsets, foster innovation and create impact. Essentially, this was a cultural transformation although we avoided the word “transformation” due to change fatigue.</p>
+<p>What we learned:</p><p>A vital precursor to impactful change is creating an environment in which the thorny issues are tabled and the difficult conversations are not avoided. This takes courage!</p>
+<h2>Benefits</h2>
+<ul><li>Alignment between leaders on the structural changes required to increase impact.</li><li>Clarity of roles at all levels.</li><li>Re-definition of the leadership role and re-balancing between people and business priorities.</li><li>Greater cohesion, understanding and trust building within and between the separate teams.</li><li>Clarity on the change needed and leaders taking responsibility for driving specific change projects.</li><li>Greater integration between the functional LT and catalysts team, with a significant impact for embedded and sustainable change.</li><li>Adapting to shifting structural and political landscape, prioritising and re-prioritising team objectives and projects in real-time.</li></ul>

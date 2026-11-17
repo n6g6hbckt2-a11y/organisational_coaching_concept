@@ -1,0 +1,23 @@
+---
+layout: default
+title: Case Studies
+description: Case studies reflecting the actual nature and experience of our work with a variety of organisations.
+---
+<section class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">Insights</p>
+    <h1 class="h2">Case studies</h1>
+    <p class="lede">We have constructed case studies which reflect the actual nature and experience of our work with a variety of organisations. Client names and industries are changed to honour our confidentiality agreements. What stands out for you? How is your organisational dilemma similar and different?</p>
+  </div>
+</section>
+<section class="section-tight">
+  <div class="wrap">
+    {% assign cs = site.case_studies | sort: 'date' | reverse %}
+    <ul class="insight-list">
+      {% for c in cs %}
+      <li><span class="date">{{ c.themes | join: ', ' | default: 'Case study' }}</span><div><h3><a href="{{ c.url | relative_url }}">{{ c.title }}</a></h3><p class="muted">{{ c.description }}</p></div></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{% include cta.html %}
