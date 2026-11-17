@@ -217,3 +217,14 @@ p { margin: 0 0 var(--s2); }
 .link-card-plain { text-decoration: none; color: inherit; display: block; }
 .link-card-plain:hover { border-color: var(--brass); }
 .link-card-plain h3 { margin: 0; }
+
+/* Hero portraits, principal portraits, lenses */
+.hero-grid { display: grid; grid-template-columns: 7fr 5fr; gap: var(--s6); align-items: center; }
+.hero-portraits { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s2); }
+.hero-portraits img { width: 100%; aspect-ratio: 1; object-fit: cover; }
+.hero-portraits img:last-child { margin-top: var(--s6); }
+@media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; gap: var(--s4); } .hero-portraits { max-width: 420px; } .hero-portraits img:last-child { margin-top: var(--s4); } }
+.portrait-img { width: 100%; max-width: 440px; aspect-ratio: 1; object-fit: cover; margin-bottom: var(--s3); }
+.lens { border-top: 2px solid var(--brass); padding-top: var(--s3); }
+.lens h3 { font-size: 1.35rem; }
+.credentials strong { font-weight: 600; color: var(--green-deep); }

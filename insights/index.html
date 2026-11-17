@@ -6,15 +6,15 @@ description: Sharp Observations and longer articles on board governance, balance
 <section class="page-head">
   <div class="wrap">
     <p class="eyebrow">Insights</p>
-    <h1 class="h2">Sharp observations</h1>
-    <p class="lede">Short, contrarian notes on board governance, balance-sheet leadership and systemic performance, alongside our longer articles and mini-series.</p>
+    <h1 class="h2">Observations &amp; articles</h1>
+    <p class="lede">Short notes on governance, capital and how leadership teams really work, alongside our longer articles and mini-series.</p>
   </div>
 </section>
 <section class="section-tight">
   <div class="wrap">
     {% assign obs = site.insights | where: 'kind', 'observation' | sort: 'date' | reverse %}
     {% if obs.size > 0 %}
-    <p class="eyebrow">Sharp Observations</p>
+    <p class="eyebrow">Observations</p>
     <ul class="insight-list" style="margin-bottom: var(--s6);">
       {% for i in obs %}
       <li><span class="date">{{ i.date | date: "%-d %b %Y" }}</span><div><h3><a href="{{ i.url | relative_url }}">{{ i.title }}</a></h3><p class="muted">{{ i.description }}</p></div></li>
